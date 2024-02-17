@@ -1,0 +1,39 @@
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1106;
+  opacity: 1;
+}
+.preloader > * {
+  min-width: 0;
+}
+.preloader__wrap {
+  width: 100%;
+  max-width: 9.375rem;
+}
+.preloader__progress {
+  background: #fff;
+  height: 0.125rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.preloader__progress span {
+  background: var(--themeColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+}

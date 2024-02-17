@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "scrollbar.css";
+@import "sidebar.css";
+@import "progress.css";
+@import "modal.css";
+@import "dropdownmenu.css";
+
+:root {
+  /* Main Color */
+  --themeColor: #fd6969;
+  --themeColorDark: #ef4444;
+  --themeLightColor: #fef2f2;
+  --secondaryColor: #b0eacd;
+  --themeDarkColor: #2e374f;
+  --themeWhiteColor: #ffffff;
+
+  /* Greyscale Color */
+  --lightColor: #9ea3ae;
+  --lightDeepColor-1: #9ea3ae;
+  --themeLightColor: #fef2f2;
+  --lightDeepColor-3: #d3d5da;
+  --lightDeepColor-4: #9ea3ae;
+  --darkColor: #6c727f;
+  --darkDeepColor-1: #4d5461;
+  --darkDeepColor-2: #394150;
+  --darkDeepColor-3: #212936;
+  --darkDeepColor-4: #0b0a0f;
+
+  /* Typography */
+  --headline-1: 52px;
+  --headline-2: 40px;
+  --headline-3: 32px;
+  --headline-4: 24px;
+  --bodyXLarge: 20px;
+  --bodyLarge: 18px;
+  --bodyMedium: 16px;
+  --bodySmal: 14px;
+  --bodyXSmal: 10px;
+}
+
+body {
+  background: var(--themeLightColor);
+  font-size: 14px;
+  font-family: "Poppins", sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+i,
+label,
+button,
+input,
+textarea,
+span {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+}
+a {
+  font-family: "Poppins", sans-serif !important;
+  cursor: pointer !important;
+}
+.border-radius-0 {
+  border-radius: 0 !important;
+}
+.recharts-text {
+  color: var(--bs-gray-200);
+  font-weight: 300;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.table-section {
+  height: 55vh !important;
+  overflow-y: auto;
+  scrollbar-color: var(--bs-gray-500) var(--bs-light) !important;
+  scrollbar-width: thin !important;
+}
+
+table {
+  width: 100%;
+}
+td {
+  white-space: nowrap !important;
+}
+td div {
+  white-space: normal;
+  word-break: break-all !important;
+  display: block;
+}
+img.side-nav-logo {
+  max-width: 100px;
+}
+.custom-thead {
+  display: table;
+  /* to take the same width as tr */
+  width: 100%;
+  /* - 17px because of the scrollbar width */
+}
+
+.custom-tbody {
+  display: block;
+  /* to enable vertical scrolling */
+  max-height: 300px;
+  /* e.g. */
+  overflow-y: auto;
+  /* keeps the scrollbar even if it doesn't need it; display purpose */
+}
+
+.custom-tr {
+  display: table;
+  /* display purpose; th's border */
+  width: 100%;
+  /* because of the border (Chrome needs this line, but not FF) */
+}
+
+.is-invalid {
+  border: 1px red solid;
+  border-radius: 4px;
+}
+
+.normalList {
+  height: 300px;
+}
+.logo {
+  margin: 0 !important;
+}
+.logo > span {
+  text-align: center !important;
+}
+.rs-anim-fade.rs-anim-in.rs-picker-date-menu.rs-picker-menu.placement-bottom-start {
+  z-index: 9999;
+}
+button#dropdown-stores {
+  box-sizing: 0;
+}
+.fade.monthly_charge.modal.show {
+  opacity: 1 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--ct-modal-backdrop-bg);
+}
+.table-container {
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  max-height: 400px; /* Adjust the max height as needed */
+  min-height: 400px; /* Adjust the max height as needed */
+  overflow-y: auto;
+  position: relative;
+}
+
+.table-container .table {
+  width: 100%;
+}
+
+.table-container .table thead {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white; /* Set the background color of the header */
+}
+
+.table-container .table th,
+.table-container .table td {
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-bottom: 1px solid #ddd; /* Add border bottom for each cell */
+}
+
+/* Apply custom styles to the scrollbar */
+.table-container::-webkit-scrollbar {
+  width: 6px !important; /* Set the width of the scrollbar */
+}
+
+/* Track */
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+/* Handle */
+.table-container::-webkit-scrollbar-thumb {
+  background: #fff !important; /* Set the color of the scrollbar handle */
+  border-radius: 2px; /* Set the border radius of the scrollbar handle */
+}
+
+/* Handle on hover */
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar handle on hover */
+}
