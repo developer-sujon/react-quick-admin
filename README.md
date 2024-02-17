@@ -19,4 +19,4 @@ React Quick Admin is a powerful and customizable admin template built with React
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/react-quick-admin.git
+   git clone https://github.com/developer-sujon/react-quick-admin.git
